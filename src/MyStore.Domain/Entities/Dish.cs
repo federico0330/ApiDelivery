@@ -6,10 +6,10 @@ public class Dish
     public string Name {get;set;}
     public string Description {get;set;}
     public decimal Price {get;set;}
-    public bool Available {get; set;}
+    public bool Available {get; set;} = true;
     public string ImageUrl {get;set;}
     public DateTime CreateDate {get;set;} = DateTime.Now;
-    public DateTime UpdateDate {get;set;}
+    public DateTime? UpdateDate {get;set;}
     //Relación con Category
     public int CategoryId {get;set;}
     public Category Category {get;set;}

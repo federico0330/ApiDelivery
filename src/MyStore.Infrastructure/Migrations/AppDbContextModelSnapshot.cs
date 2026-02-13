@@ -187,7 +187,7 @@ namespace MyStore.Infrastructure.Migrations
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime>("UpdateDate")
+                    b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("DishId");

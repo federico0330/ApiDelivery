@@ -12,7 +12,7 @@ using MyStore.Infrastructure.Persistence;
 namespace MyStore.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260211172416_InitialCreate")]
+    [Migration("20260213012120_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -190,7 +190,7 @@ namespace MyStore.Infrastructure.Migrations
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime>("UpdateDate")
+                    b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("DishId");

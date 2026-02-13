@@ -79,7 +79,7 @@ public class AppDbContext : DbContext
             entity.Property(d => d.Available);
             entity.Property(d => d.ImageUrl).IsRequired();
             entity.Property(d => d.CreateDate).IsRequired();
-            entity.Property(d => d.UpdateDate).IsRequired();
+            entity.Property(d => d.UpdateDate);
             
             entity.HasOne(d => d.Category)
             .WithMany(c => c.Dishes)

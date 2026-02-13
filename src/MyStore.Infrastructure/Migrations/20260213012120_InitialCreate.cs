@@ -65,7 +65,7 @@ namespace MyStore.Infrastructure.Migrations
                     Available = table.Column<bool>(type: "bit", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
